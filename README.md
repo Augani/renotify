@@ -12,18 +12,61 @@ npm install --save renotify
 
 ## Usage
 
+Make sure to import the default export and add it to the root of your
+react components.
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'renotify'
+import Renotify from 'renotify'
 import 'renotify/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+    <div>
+    {/*Other components*/}
+    <Renotify />
+    </div>
+)
   }
 }
 ```
+
+
+Then you can import the notify object anywhere in your app
+ and in any component to use it
+```jsx
+import {notify} from 'renotify'
+
+function Example(){
+
+  const notification = ()=>{
+    notify.show({
+          title: "Kofi is online!",
+          subTitle: "Want to chat with him?",
+          type: "success",
+          style: {
+                //css in js style
+            },
+          confirm: true,
+          confirmText: "Yes",
+          cancelText: "No",
+          confirmAction: function(){
+              //What to do when user clicks ok
+          }
+    })
+  }
+  return(
+  <div>
+  {/*  Normal codes*/}
+  </div>
+)
+}
+```
+
+## Example
+
+![](mn.gif)
 
 ## License
 

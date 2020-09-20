@@ -1,9 +1,351 @@
 /* add css module styles here (optional) */
-
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
 .test {
   margin: 2em;
   padding: 0.5em;
   border: 2px solid #000;
   font-size: 2em;
   text-align: center;
+}
+
+.renotify-main{
+  height: 100%;
+  width: 100%;
+}
+
+.renotifyBackShow {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.renotifyBack {
+  height: 100vh;
+  width: 100vw;
+  z-index: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.renotifyFR{
+ 
+  margin: 5px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 5px 3px #d6d3d3;
+  transition: all .2s ease-in;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  animation-name: appearFromRight;
+  transform: translateX(100px);
+  top: 0;
+  right: 0;
+  
+}
+.renotifyFL{
+  
+  margin: 5px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 5px 3px #d6d3d3;
+  transition: all .2s ease-in;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  animation-name: appearFromLeft;
+  transform: translateX(-100px);
+  top: 0;
+  left: 0;
+  
+}
+.renotifyFT{
+ 
+  margin: 5px;
+ 
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 0 5px 3px #d6d3d3;
+  transition: all .2s ease-in;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  animation-name: appearFromTop;
+  transform: translateY(-100px);
+  top: 0;
+  left: 40%;
+  
+}
+.renotifyFB{
+  
+  margin: 5px;
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 0 5px 3px #d6d3d3;
+  transition: all .2s ease-in;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  animation-name: appearFromBottom;
+  transform: translateY(100px);
+  bottom: 0;
+  max-width: 200px;
+  left: 40%;
+  
+}
+
+.renotifyHold{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.renotifyHold button{
+  outline: none;
+}
+
+.renotifyHold > h6{
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+    text-transform: capitalize;
+
+}
+.renotifyHold > small{
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+
+}
+
+.reDialog {
+    width: 400px;
+    box-shadow: 0 4px 5px grey;
+    background-color: white;
+    border-radius: 4px;
+    min-height: 200px;
+
+
+}
+
+.reDialogBack{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.reDialogFooter{
+  width: 100px;
+
+}
+
+
+@media only screen and (max-width: 600px){
+  .renotify-main{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .renotifyBackShow {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 900;
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  .renotifyBack {
+    height: 100vh;
+    width: 100vw;
+    z-index: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .renotifyFR{
+   
+    margin: 5px;
+    width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 5px 3px #d6d3d3;
+    transition: all .2s ease-in;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-name: appearFromRight;
+    transform: translateX(100px);
+    top: 0;
+    right: 0;
+    
+  }
+  .renotifyFL{
+    
+    margin: 5px;
+    width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 5px 3px #d6d3d3;
+    transition: all .2s ease-in;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-name: appearFromLeft;
+    transform: translateX(-100px);
+    top: 0;
+    left: 0;
+    
+  }
+  .renotifyFT{
+   
+    margin: 5px;
+   
+    width: 150px;
+    border-radius: 2px;
+    box-shadow: 0 5px 3px #d6d3d3;
+    transition: all .2s ease-in;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-name: appearFromTop;
+    transform: translateY(-100px);
+    top: 0;
+    left: 40%;
+    
+  }
+  .renotifyFB{
+    
+    margin: 5px;
+    width: 150px;
+    border-radius: 2px;
+    box-shadow: 0 5px 3px #d6d3d3;
+    transition: all .2s ease-in;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-name: appearFromBottom;
+    transform: translateY(100px);
+    bottom: 0;
+    max-width: 200px;
+    left: 40%;
+    
+  }
+  
+  .renotifyHold{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* font-family: 'Open Sans', sans-serif; */
+  letter-spacing: 0.08em;
+  }
+  
+  .renotifyHold button{
+    outline: none;
+  }
+}
+
+@keyframes appearFromLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translateX(20px);
+  }
+  90%{
+    transform: translateX(-10px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes appearFromRight {
+  0% {
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translateX(-20px);
+  }
+  90%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes appearFromTop {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  80%{
+    transform: translateY(30px);
+  }
+  90%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes appearFromBottom {
+  0% {
+    transform: translateY(100px);
+  }
+
+  80%{
+    transform: translateY(-20px);
+  }
+  90%{
+    transform: translateY(10px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
 }
