@@ -1,10 +1,13 @@
 {
-  "name": "renotify",
+  "name": "renotify-react",
   "version": "1.0.0",
   "description": "A react notification library",
   "author": "Augani",
   "license": "MIT",
-  "repository": "Augani/renotify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Augani/renotify.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

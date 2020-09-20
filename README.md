@@ -1,13 +1,13 @@
-# renotify
+# renotify-react
 
 > A react notification library
 
-[![NPM](https://img.shields.io/npm/v/renotify.svg)](https://www.npmjs.com/package/renotify) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/renotify.svg)](https://www.npmjs.com/package/renotify-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save renotify
+npm install --save renotify-react
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ react components.
 ```jsx
 import React, { Component } from 'react'
 
-import Renotify from 'renotify'
+import Renotify from 'renotify-react'
 import 'renotify/dist/index.css'
 
 class Example extends Component {
@@ -36,7 +36,7 @@ class Example extends Component {
 Then you can import the notify object anywhere in your app
  and in any component to use it
 ```jsx
-import {notify} from 'renotify'
+import {notify} from 'renotify-react'
 
 function Example(){
 
