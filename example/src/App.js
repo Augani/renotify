@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Renotify, {notify, Dialog}  from 'renotify'
-import 'renotify/dist/index.css'
+import Renotify, {notify, Dialog}  from 'renotify-react'
+import 'renotify-react/dist/index.css'
+import Main from './main'
 
 const App = () => {
   const press = ()=>{
@@ -24,10 +25,7 @@ const App = () => {
  
   return (
     <>
-     <p>Hello</p>
-      <button onClick={press}>press here</button>
-     
-      
+     <Main/>
       <Renotify id="modal-root"/>
       </>
   )

@@ -4,7 +4,8 @@ import './styles.module.css'
 import Notify from './notifications'
 const Body = function () {
   let bd = document.getElementsByTagName('body')[0]
-  let el = document.createElement('div')
+  let el = document.createElement('div');
+  el.style.overflow = "hidden";
   bd.appendChild(el)
   return el
 }
@@ -23,7 +24,9 @@ class Main extends React.Component {
   }
 
   getEl(id) {
-    return document.getElementById(id)
+    let el = document.getElementById(id)
+    el.style.overflow = "hidden";
+    return el;
   }
 
   getListen() {
@@ -38,9 +41,10 @@ class Main extends React.Component {
         content: <Notify options={options} />
       })
 
-      let time = options.timeOut ===false ? options.timeOut : typeof(options.timeOut) != Int16Array?4:options.timeOut;
+      let time = options.timeOut ==="0" || options.timeOut ===0 ?null: options.timeOut; 
       if (!time)return;
-      time = parseInt(time) * 1000
+      time = parseInt(time) * 1000;
+     
       setTimeout(() => {
         self.removeContent()
       }, time)
