@@ -1,8 +1,12 @@
-# renotify-react
+# Renotify-react
 
 > A react notification library
 
-[![NPM](https://img.shields.io/npm/v/renotify.svg)](https://www.npmjs.com/package/renotify-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/renotify-react.svg)](https://www.npmjs.com/package/renotify-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+### Live examples
+
+[![Renotify](https://badgen.net/badge/Renotify-react/View%20page/cyan)](https://augani.github.io/renotify/)
 
 ## Install
 
